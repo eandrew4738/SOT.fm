@@ -19,24 +19,38 @@ html {
   position: relative;
   }
 
+  .bg {
+    /* The image used */
+    background-image: url("Images/IFOK8961.JPG");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
   .player_main {
   position: absolute;
-  left: 50%;
-  top: 13%;
+  left: 38%;
+  top: 3%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  margin-top: 2%;
 }
 
 
 /*Player visual*/
 
 .player {
-  position: relative;
+  position: absolute;
   width: 450px;
   height: 740px;
-  top:300px;
+  top:54px;
   border-radius: 40px;
-  background: url(2.jpg);
+  background: url(Images/2.jpg);
   background-size: cover;
   border: 1px solid rgb(126, 69, 33);
 }
@@ -89,28 +103,27 @@ html {
   position: absolute;
   width: 388px;
   height: 695px;
-  background: url(3.jpg);
+  background: url(Images/3.jpg);
   border-radius: 20px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  overflow: hidden
-}
+  overflow: hidden;
+  box-shadow: -3px 11px 50px #000;
+  }
 
 .speaker_cover {
   position: absolute;
-  width: 86%;
-  height: 50%;
-  top: 46%;
-  background: url(4.jpg);
+  width: 96%;
+  height: 55%;
+  top: 303px;
+  background: url(Images/4.jpg);
+      background-size: auto auto;
   background-size: cover;
-  left: 24px;
+  left: 8px;
   border-radius: 30px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 
-                    0 0 8px rgba(0, 0, 0, 0.7), 
-                    0 1px 1px rgba(0, 0, 0, 0.7);
-  border: 1px solid black;
+  box-shadow: 0 0 20px #000;
 }
 
 .speaker_shadow_inside {
@@ -161,28 +174,30 @@ html {
 .fm_main {
   position: relative;
   height: 100px;
-  width: 85%;
+  width: 90%;
   background: black;
   left: 206px;
   top: 20px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.53);
   overflow: hidden;
+  box-shadow: 0 0 20px #000;
 }
 
 .fm_glass {
+
   position: absolute;
-  width: 250%;
-  height: 121%;
+  width: 101%;
+  height: 108%;
   left: -2px;
-  top: -16px;
+  top: -5px;
   display: block;
   z-index: 2;
   background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0.19) 57%, rgba(255, 255, 255, 0) 63%);
   background: linear-gradient(135deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0.19) 57%, rgba(255, 255, 255, 0) 63%);
   opacity: 0.2;
-  }
+
+}
 
 .fm_second_plate {
   position: absolute;
@@ -344,39 +359,36 @@ html {
 }
 
 .controls_fm_main {
+
   position: fixed;
-  width: 350px;
+  width: 347px;
   height: 200px;
-  bottom: 118px;
-  left: 50%;
+  bottom: -395px;
+  left: 220px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-}
+  
 
-.controls_fm {
-  position: fixed;
-  width: 100%;
-  height: 100%;
 }
-
 
 /*--CIRCLE CONTROLS--*/
 
-.tune_circle {
+.logo {
   position: fixed;
-  width: 107px;
-  height: 108px;
-  border-radius: 50%;
-  background-image: url('icon-off.png');
+  width: 31%;
+  height: 54%;
+  border-radius: 72%;
+  background-image: url('Images/icon-off.png');
   background-repeat: no-repeat;
   background-position-x : top;
   float: right;
-  right: 65%;
+  right: 68%;
   margin-top: 40px;
   border: 1px solid rgb(85, 85, 85);
   transform: rotate(0deg);
   cursor: pointer;
-  top:19px;
+  top:-8px;
+  background-size: cover;
 }
 
 /*MINI CIRCLES #1*/
@@ -398,7 +410,7 @@ html {
   top: 70px;
   height: 80px;
   border-radius: 50%;
-  background: url(power2.jpg);  
+  background: url(Images/power2.jpg);  
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   transform: rotate(0deg);
@@ -415,7 +427,7 @@ html {
   display: block;
   width: 48px;
   height: 48px;
-  background: url(power3.jpg);
+  background: url(Images/9.jpg);
   border-radius: 50%;
   left: 50%;
   top: 50%;
@@ -426,7 +438,7 @@ html {
             inset 0 1px 0 rgba(255,255,255,0.2),    
                   0 0 8px rgba(0, 0, 0, 0.7),
                   0 1px 1px rgba(0, 0, 0, 0.7);
-  border: 1px solid #8b4513;                
+  border: 2px solid #654321;                
 }
 
 .tune_mini_circle:before {
@@ -510,7 +522,7 @@ html {
   font-family: 'Asap', sans-serif;
   font-size: 12px;
   top: 40px;
-  left: 249px;
+  left: 274px;
   font-weight: 700;
   color: #f5deb3;
 }
@@ -563,14 +575,18 @@ html {
 }
 
 
-.text_logo {
+.text_logo1 {
   position: absolute;
   font-family: 'Russo One', sans-serif;
-  font-size: 22px;
-  left: 268px;
-  bottom: -4px;
+  font-size: 30px;
+  left: 9px;
+  bottom: 81px;
   color: #f5deb3;
+  text-shadow: 4px 4px #331900;
 }
+
+
+
 
 
 
@@ -618,8 +634,8 @@ body {
   }
   
   .switch {
-    width: 93px;
-    height: 27px;
+    width: 90%;
+    height: 46%;
     position: relative;
     margin: 100px auto;
     -webkit-transform: rotate(-90deg);
@@ -627,9 +643,9 @@ body {
     -o-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
-    left: 158%;
-    top: -160%;
-  }
+    left: 162%;
+    top: -165%;
+  } 
   
   .switch label 
     {
@@ -637,7 +653,7 @@ body {
     width: 80%;
     height: 90%;
     position: relative;
-    background: url(power2.jpg); /*#121823*/
+    background: url(Images/power2.jpg); /*#121823*/
     border-radius: 30px 30px 30px 30px;
     box-shadow:
     inset 0 3px 8px 1px rgba(0, 0, 0, 0.94), inset 0 1px 0 rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.2);
@@ -650,20 +666,21 @@ body {
   
   .switch input ~ label i {
       display: block;
-      height: 21px;
-      width: 21px;
+      height: 20px;
+      width: 20px;
       position: absolute;
       left: 2px;
       top: 2px;
       z-index: 2;
       border-radius: inherit;
-      background: url(power3.jpg); /* Fallback */
+      background: url(Images/9.jpg); /* Fallback */
       box-shadow:
           inset 0 1px 0 rgba(255,255,255,0.2),
           0 0 8px rgba(0,0,0,0.3),
           0 12px 12px rgba(0,0,0,0.4);
     -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  border: 1px solid #654321;
   }
   
   
@@ -723,45 +740,106 @@ body {
   }
    
 
-/* clock */
-html, body {
-  height: 100%;
-}
+  
+.Rectangle {
 
-body {
-  background: #0f3854;
-  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
-  background-size: 100%;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-#clock {
-  font-family: 'Share Tech Mono', monospace;
-  color: #ffffff;
-  text-align: center;
+  width: 100%;
+  height: 73px;
+  opacity: 0.6;
+  background: url(Images/23.jpg);
+      background-repeat: repeat;
+      background-size: auto auto;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #daf6ff;
-  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+  left: 0px;
+  top: 0px;
+  float: left;
+  min-height: 1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
-#clock .time {
-  letter-spacing: 0.05em;
-  font-size: 80px;
-  padding: 5px 0;
+
+.Title {
+
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 5px 5px #331900;
+  position: absolute;
+  left: 2%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 70px;
+
 }
-#clock .date {
-  letter-spacing: 0.1em;
-  font-size: 24px;
+.logo2 {
+
+  position: fixed;
+  width: 40%;
+  height: 23%;
+  background-image: url('Images/logo2.png');
+  background-repeat: no-repeat;
+  background-position-x: top;
+  float: center;
+  right: 29%;
+  margin-top: -4px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  top: 519px;
+  background-size: contain;
+  border-radius: 50%;
+
 }
-#clock .text {
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  padding: 20px 0 0;
+
+.header {
+  float: right;
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 5px 5px #331900;
+  position: absolute;
+  left: 87%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 27px;
+  padding: 20px 10px;
+  float: right;
 }
+
+.header2 {
+  float: right;
+  
+  position: absolute;
+  left: 91%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  
+  line-height: 27px;
+  padding: 20px 10px;
+  float: right;
+}
+
+.header3 {
+  float: right;
+  
+  position: absolute;
+  left: 95%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  
+  line-height: 27px;
+  padding: 20px 10px;
+  float: right;
+}
+
+
+
+
+
+
+
+
+
+
