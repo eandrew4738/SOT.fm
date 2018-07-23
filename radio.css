@@ -762,7 +762,7 @@ body {
 .Title {
 
   font-family: 'Russo One', sans-serif;
-  text-shadow: 5px 5px #331900;
+  text-shadow: 2px 2px #331900;
   position: absolute;
   left: 2%;
   top: 0%;
@@ -793,14 +793,13 @@ body {
 
 .header {
   float: right;
-  font-family: 'Russo One', sans-serif;
-  text-shadow: 5px 5px #331900;
+  
   position: absolute;
   left: 87%;
   top: 0%;
   display: inline-block;
   color: #ffffff;
-  font-size: 34px;
+  
   line-height: 27px;
   padding: 20px 10px;
   float: right;

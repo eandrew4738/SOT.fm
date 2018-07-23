@@ -55,12 +55,10 @@ $(function functionName() {
 });
 
 
-$('#player_audio').click(function() {
-  if ($('#player_audio').prop('paused') == false) {
-    $('#player_audio').trigger('pause');
-    alert('music paused');
+$('#toggle').click(function() {
+  if ($('#musicPlayer').prop('paused') == false) {
+    $('#musicPlayer').trigger('pause');
   } else {
-    $('#player_audio').trigger('play');
-    alert('music playing');
+    $('#musicPlayer').trigger('play');
   }
 });
