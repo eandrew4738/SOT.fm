@@ -62,3 +62,10 @@ $('#toggle').click(function() {
     $('#musicPlayer').trigger('play');
   }
 });
+
+
+
+$('.header3').on('click', function(event) {
+  event.preventDefault();
+    $('.smenu').toggleClass('share');
+});

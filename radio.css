@@ -34,7 +34,7 @@ html {
 
   .player_main {
   position: absolute;
-  left: 38%;
+  left: 39%;
   top: 3%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -834,8 +834,52 @@ body {
 }
 
 
+.header3-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:-200%;
+    top:100%;
+    font-family: 'Russo One', sans-serif;
+}
 
+.header3-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
+.header3-content a:hover {background-color: #f1f1f1}
+
+.header3:hover .header3-content {
+    display: block;
+}
+
+.header3:hover .header3{
+    background-color: #3e8e41;
+}
+
+.footer {
+  font-family: 'Russo One', sans-serif;
+  font-size: 18px;
+  opacity: 0.9;
+  background: url(Images/23.jpg);
+      background-repeat: repeat;
+      background-size: auto auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 73px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 
