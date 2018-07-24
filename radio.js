@@ -26,9 +26,9 @@ $(function functionName() {
     liveSnap: function(endValue) {
       var middle = 0.50;
       if (endValue === 0) {
-        $(".radio_list").prop("volume", middle);
+        $("#musicPlayer").prop("volume", middle);
       } else {
-        $(".radio_list").prop("volume", ((endValue / 240) + middle));
+        $("#musicPlayer").prop("volume", ((endValue / 240) + middle));
       }
       return Math.round(endValue / 20) * 20;
     }
