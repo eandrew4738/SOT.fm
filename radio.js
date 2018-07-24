@@ -58,8 +58,10 @@ $(function functionName() {
 $('#toggle').click(function() {
   if ($('#musicPlayer').prop('paused') == false) {
     $('#musicPlayer').trigger('pause');
+    $('#displayText').toggle();
   } else {
     $('#musicPlayer').trigger('play');
+    $('#displayText').toggle();
   }
 });
 
@@ -69,3 +71,38 @@ $('.header3').on('click', function(event) {
   event.preventDefault();
     $('.smenu').toggleClass('share');
 });
+
+function myFunction() {
+  var checkBox = document.getElementById("toggle");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+      text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+  var text = document.getElementById("text1");
+  if (checkBox.checked == true){
+      text.style.display = "none";
+  } else {
+     text.style.display = "block";
+  }
+}
+
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('timeText').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+

@@ -70,12 +70,12 @@
               
               <div class="metal_brush"></div>
               <div class="fm_main">
-                  <div id="message" style="display: block;">
-                      <div class="nowListening"></div>
-                      <div class="info">
-                          <h2 id="SongTitle"></h2>
-                          <span id="SongArtist"></span>
-                      </div>
+                <p id="text" style="display:none; color:green; position: absolute; left: 5%; top: -6%;">ON</p>
+                <p id="text1" style="display:block; color:red ;position: absolute; left: 5%; top: -6%;">OFF</p>
+                <body onload="startTime()">
+                  <div id="displayText" style="display:none; ">
+                    <div id="timeText" style=" color: white;position: absolute;left: 80%;top: 10%;"></div>
+                    <marquee behavior="scroll" direction="left" style="color: white;position: absolute;top: 54%;font-size: 30px;font-family: 'Russo One', sans-serif;">Welcome To SOT.FM</marquee>
                   </div>
                 <div class="fm_glass"></div>
 
@@ -99,10 +99,11 @@
                 <div class="tune_mini_circle"></div>
                 
                 <div class="switch">
-                  <input id="toggle" name="toggle" type="checkbox" autocomplete="off" >
+                  <input id="toggle" name="toggle" type="checkbox" autocomplete="off" onclick="myFunction()" >
+                 
                   <label for="toggle">
                     <i><audio id="musicPlayer" src="http://17793.live.streamtheworld.com:80/KGNWAM_SC"></audio></i>
-                 </label>
+                  </label>
                   <span></span>
                 </div>
               </div>
