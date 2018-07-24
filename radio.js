@@ -6,13 +6,51 @@ var fm_pole = $(".fm_slider_bar");
 var fm_pole_loc = fm_pole.css("left");
 
 // interaction functions
-$('.btn').bind('click', function(){
+$('.btn').bind('click', function () {
   $(this).toggleClass('active');
 });
 
 $(function functionName() {
 
-    // VOLUME CONTROLS
+  // ON/OFF CONTROLS
+  var text = document.getElementById("text");
+  Draggable.create(tune, {
+    type: "rotation",
+    throwProps: true,
+    bounds: {
+      minRotation: -23,
+      maxRotation: 11
+    },
+    liveSnap: function (endValue)
+     {
+      var text = document.getElementById("text");
+      var displayText = document.getElementById("displayText");
+
+      if (endValue == -23) {
+        text.style.display = "none",
+          $("#musicPlayer").trigger('pause');
+          $("#displayText").hide();
+      }
+      else {
+        text.style.display = "block",
+          $("#musicPlayer").trigger('play');
+          $("#displayText").show();
+      }
+      var text = document.getElementById("text1");
+      if (endValue == -23) {
+        text.style.display = "block",
+          $("#musicPlayer").trigger('pause');
+          $("#displayText").hide();
+      } else {
+        text.style.display = "none",
+          $("#musicPlayer").trigger('play');
+          $("#displayText").show();
+      }
+      return Math.round(endValue / 11) * 11;
+    }
+  });
+
+  // VOLUME CONTROLS
 
   var volumeMin;
 
@@ -23,7 +61,7 @@ $(function functionName() {
       minRotation: -120,
       maxRotation: 120
     },
-    liveSnap: function(endValue) {
+    liveSnap: function (endValue) {
       var middle = 0.50;
       if (endValue === 0) {
         $("#musicPlayer").prop("volume", middle);
@@ -45,7 +83,7 @@ $(function functionName() {
       minRotation: -100,
       maxRotation: 100,
     },
-    liveSnap: function(endValue) {
+    liveSnap: function (endValue) {
 
       fm_pole.css("left", endValue + 150);
       return Math.round(endValue / 20) * 20;
@@ -55,7 +93,7 @@ $(function functionName() {
 });
 
 
-$('#toggle').click(function() {
+$('#toggle').click(function () {
   if ($('#musicPlayer').prop('paused') == false) {
     $('#musicPlayer').trigger('pause');
     $('#displayText').toggle();
@@ -67,27 +105,10 @@ $('#toggle').click(function() {
 
 
 
-$('.header3').on('click', function(event) {
+$('.menu3').on('click', function (event) {
   event.preventDefault();
-    $('.smenu').toggleClass('share');
+  $('.smenu').toggleClass('share');
 });
-
-function myFunction() {
-  var checkBox = document.getElementById("toggle");
-  var text = document.getElementById("text");
-  if (checkBox.checked == true){
-      text.style.display = "block";
-  } else {
-     text.style.display = "none";
-  }
-  var text = document.getElementById("text1");
-  if (checkBox.checked == true){
-      text.style.display = "none";
-  } else {
-     text.style.display = "block";
-  }
-}
-
 
 function startTime() {
   var today = new Date();
@@ -97,12 +118,12 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('timeText').innerHTML =
-  h + ":" + m + ":" + s;
+    h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 500);
 }
 
 function checkTime(i) {
-  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
   return i;
 }
 
