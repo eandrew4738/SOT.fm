@@ -312,6 +312,7 @@ body,
   transform: translateX(-50%);
   overflow: hidden;
   box-shadow: 0 0 20px #000;
+  border-radius: 5px;
 }
 
 .fm_glass {
@@ -594,33 +595,34 @@ body,
 .tune_mini_circle_2 {
   display: block;
   position: absolute;
-  width: 55px;
-  height: 55px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  background: -webkit-linear-gradient(top, rgb(232, 232, 180), rgb(135, 135, 99));
-  background: linear-gradient(to bottom, rgb(232, 232, 180), rgb(135, 135, 99));
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  border: 1px solid rgb(85, 85, 85);
   transform: rotate();
-  top: 278%;
+  top: 263%;
+  background: url(Images/power2.jpg);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.8), 0 0 6px rgba(0, 0, 0, 0.7), 1px 2px 1px rgba(0, 0, 0, 0.7);
 }
 
-.tune_mini_circle_2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 48px;
-  height: 48px;
-  background: -webkit-linear-gradient(top, rgb(228, 228, 177), rgb(187, 187, 137));
-  background: -webkit-linear-gradient(top, #fdfde5, #cdc79a);
-  background: linear-gradient(to bottom, #fdfde5, #cdc79a);
-  border-radius: 50%;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1;
+.tune_mini_circle_2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: -webkit-linear-gradient(top, rgb(228, 228, 177), rgb(187, 187, 137));
+    background: -webkit-linear-gradient(top, #fdfde5, #cdc79a);
+    background: linear-gradient(to bottom, #fdfde5, #cdc79a);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: url(Images/9.jpg);
+    border: 2px solid #654321;
 }
 
 .tune_mini_circle_2:before {
@@ -640,7 +642,7 @@ body,
 }
 
 .tune_mini_circle_2 {
-  left: 186%;
+  left: 125%;
 }
 
 
@@ -685,8 +687,8 @@ body,
 .off {
   position: absolute;
   list-style: none;
-  top: 95%;
-  left: 21%;
+  top: 90%;
+  left: 20%;
 }
 
 .off li:nth-child(2)::before {
@@ -696,7 +698,7 @@ body,
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #523b38;
+  background: #f5deb3;
   bottom: -8px;
   right: 29px;
 }
@@ -708,9 +710,9 @@ body,
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #523b38;
+  background: #f5deb3;
   bottom: -8px;
-  right: 13px;
+  right: 5px;
 }
 
 .off li{
@@ -726,6 +728,9 @@ body,
   padding: 0 3px;
   border: 2px solid #f5deb3;
   border-radius: 10px;
+  position: absolute;
+  left: -20%;
+  top: 67%;
 }
 
 .text_logo1 {
