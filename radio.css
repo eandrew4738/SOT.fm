@@ -140,7 +140,7 @@ body,
 .footer {
   
   font-size: 15px;
-  opacity: 0.9;
+  opacity: 0.8;
   background: url(Images/23.jpg);
       background-repeat: repeat;
       background-size: auto auto;
@@ -158,7 +158,7 @@ body,
   .player_main {
   position: absolute;
   left: 16%;
-  top: 5%;
+  top: 6%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin-top: 2%;
@@ -175,8 +175,9 @@ body,
   border-radius: 40px;
   background: url(Images/2.jpg);
       background-size: auto auto;
+  background-size: auto auto;
   background-size: contain;
-  border: 1px solid rgb(126, 69, 33);
+  box-shadow: 1px 1px 3px 3px black;
 }
 
 .player_foot {
@@ -188,8 +189,7 @@ body,
   bottom: -15px;
   border-radius: 15px;
   z-index: -1;
-  background: -webkit-linear-gradient(top left, rgba(115, 115, 115, 1) 0%, rgba(14, 14, 14, 1) 100%);
-  background: linear-gradient(to bottom right, rgba(115, 115, 115, 1) 0%, rgba(14, 14, 14, 1) 100%);
+  background: linear-gradient(to bottom right, rgb(255, 250, 250) 0%, rgba(14, 14, 14, 1) 100%);
   left: 110px;
 }
 
@@ -202,8 +202,7 @@ body,
   bottom: -15px;
   border-radius: 15px;
   z-index: -1;
-  background: -webkit-linear-gradient(top left, rgba(115, 115, 115, 1) 0%, rgba(14, 14, 14, 1) 100%);
-  background: linear-gradient(to bottom right, rgba(115, 115, 115, 1) 0%, rgba(14, 14, 14, 1) 100%);
+  background: linear-gradient(to bottom right, rgb(255, 250, 250) 0%, rgba(14, 14, 14, 1) 100%);
   right: 110px;
 }
 
@@ -744,6 +743,7 @@ body,
   bottom: 2%;
   color: 8b4513;
   text-shadow: 1px 1px #000;
+  
 }
 
 
