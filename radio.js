@@ -19,14 +19,14 @@ $(function functionName() {
     throwProps: true,
     bounds: {
       minRotation: -23,
-      maxRotation: 11
+      maxRotation: 4
     },
     liveSnap: function (endValue)
      {
       var text = document.getElementById("text");
       var displayText = document.getElementById("displayText");
 
-      if (endValue == -23) {
+      if (endValue < 4) {
         text.style.display = "none",
           $("#musicPlayer").trigger('pause');
           $("#displayText").hide();
@@ -37,7 +37,7 @@ $(function functionName() {
           $("#displayText").show();
       }
       var text = document.getElementById("text1");
-      if (endValue == -23) {
+      if (endValue < 4) {
         text.style.display = "block",
           $("#musicPlayer").trigger('pause');
           $("#displayText").hide();
@@ -46,7 +46,7 @@ $(function functionName() {
           $("#musicPlayer").trigger('play');
           $("#displayText").show();
       }
-      return Math.round(endValue / 11) * 11;
+      return Math.round(endValue / 4) * 4;
     }
   });
 
