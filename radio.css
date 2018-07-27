@@ -139,7 +139,7 @@ body,
   width: 909px;
   height: 496px;
   top: 51px;
-  border-radius: 40px;
+  border-radius: 14px;
   background: url(Images/2.jpg);
       background-size: auto auto;
   background-size: auto auto;
@@ -180,7 +180,7 @@ body,
   background: url(Images/13.jpg);
   bottom: -3px;
   right: -2px;
-  border-radius: 35px;
+  border-radius: -1px;
   opacity: 0.1;
 }
 
@@ -191,7 +191,7 @@ body,
   background: url(Images/1.jpg);
       background-size: auto auto;
   background-size: auto auto;
-  border-radius: 30px;
+  border-radius: 9px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -208,9 +208,9 @@ body,
     height: 63%;
     top: 3%;
     background: url(Images/4.jpg);
-    background-size:contain;
+    background-size:cover;
     left: 13px;
-    border-radius: 25px;
+    border-radius: 8px;
     box-shadow: 0 0 20px #000;
     box-shadow: inset 1px 4px 9px 1px rgba(0, 0, 0, 0.94),
                 inset 0 1px 0 rgba(0,0,0,0.5), 
@@ -762,6 +762,6 @@ body,
   background-size: auto auto;
   background-size: cover;
   left: 36px;
-  border-radius: 19px;
-  box-shadow: 2px 2px 8px 5px black;
+  border-radius: 8px;
+box-shadow: 1px 1px 0px black;
 }
