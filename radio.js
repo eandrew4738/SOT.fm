@@ -6,13 +6,51 @@ var fm_pole = $(".fm_slider_bar");
 var fm_pole_loc = fm_pole.css("left");
 
 // interaction functions
-$('.btn').bind('click', function(){
+$('.btn').bind('click', function () {
   $(this).toggleClass('active');
 });
 
 $(function functionName() {
 
-    // VOLUME CONTROLS
+  // ON/OFF CONTROLS
+  var text = document.getElementById("text");
+  Draggable.create(tune, {
+    type: "rotation",
+    throwProps: true,
+    bounds: {
+      minRotation: -23,
+      maxRotation: 4
+    },
+    liveSnap: function (endValue)
+     {
+      var text = document.getElementById("text");
+      var displayText = document.getElementById("displayText");
+
+      if (endValue < 4) {
+        text.style.display = "none",
+          $("#musicPlayer").trigger('pause');
+          $("#displayText").hide();
+      }
+      else {
+        text.style.display = "block",
+          $("#musicPlayer").trigger('play');
+          $("#displayText").show();
+      }
+      var text = document.getElementById("text1");
+      if (endValue < 4) {
+        text.style.display = "block",
+          $("#musicPlayer").trigger('pause');
+          $("#displayText").hide();
+      } else {
+        text.style.display = "none",
+          $("#musicPlayer").trigger('play');
+          $("#displayText").show();
+      }
+      return Math.round(endValue / 4) * 4;
+    }
+  });
+
+  // VOLUME CONTROLS
 
   var volumeMin;
 
@@ -23,12 +61,12 @@ $(function functionName() {
       minRotation: -120,
       maxRotation: 120
     },
-    liveSnap: function(endValue) {
+    liveSnap: function (endValue) {
       var middle = 0.50;
       if (endValue === 0) {
-        $(".radio_list").prop("volume", middle);
+        $("#musicPlayer").prop("volume", middle);
       } else {
-        $(".radio_list").prop("volume", ((endValue / 240) + middle));
+        $("#musicPlayer").prop("volume", ((endValue / 240) + middle));
       }
       return Math.round(endValue / 20) * 20;
     }
@@ -45,7 +83,7 @@ $(function functionName() {
       minRotation: -100,
       maxRotation: 100,
     },
-    liveSnap: function(endValue) {
+    liveSnap: function (endValue) {
 
       fm_pole.css("left", endValue + 150);
       return Math.round(endValue / 20) * 20;
@@ -55,12 +93,37 @@ $(function functionName() {
 });
 
 
-$('#player_audio').click(function() {
-  if ($('#player_audio').prop('paused') == false) {
-    $('#player_audio').trigger('pause');
-    alert('music paused');
+$('#toggle').click(function () {
+  if ($('#musicPlayer').prop('paused') == false) {
+    $('#musicPlayer').trigger('pause');
+    $('#displayText').toggle();
   } else {
-    $('#player_audio').trigger('play');
-    alert('music playing');
+    $('#musicPlayer').trigger('play');
+    $('#displayText').toggle();
   }
 });
+
+
+
+$('.menu3').on('click', function (event) {
+  event.preventDefault();
+  $('.smenu').toggleClass('share');
+});
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('timeText').innerHTML =
+    h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+
+function checkTime(i) {
+  if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+  return i;
+}
+
