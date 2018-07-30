@@ -124,11 +124,11 @@ body,
 
   .player_main {
   position: absolute;
-  left: 16%;
-  top: 6%;
+  left: 25%;
+  top: 5%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 
