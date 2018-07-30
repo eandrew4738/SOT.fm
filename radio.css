@@ -143,7 +143,7 @@ body,
   background: url(Images/2.jpg);
       background-size: auto auto;
   background-size: auto auto;
-  background-size: contain;
+  background-size: cover;
   box-shadow: 1px 1px 3px 3px black;
 }
 
@@ -175,13 +175,18 @@ body,
 
 .main_shadow {
   position: absolute;
-  width: 912px;
-  height: 499px;
-  background: url(Images/13.jpg);
-  bottom: -3px;
-  right: -2px;
-  border-radius: -1px;
-  opacity: 0.1;
+  width: 891px;
+  height: 475px;
+  background: black;
+  bottom: 12px;
+  right: 9px;
+  border-radius: 20px;
+  opacity: 0.4;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .second_plate {
@@ -212,9 +217,7 @@ body,
     left: 13px;
     border-radius: 8px;
     box-shadow: 0 0 20px #000;
-    box-shadow: inset 1px 4px 9px 1px rgba(0, 0, 0, 0.94),
-                inset 0 1px 0 rgba(0,0,0,0.5), 
-                      10px 1px 9px rgba(255,255,255,0.2);
+   
 }
 
 .speaker_shadow_inside {
@@ -678,16 +681,7 @@ body,
 }
 
 
-.text_logo1 {
-  position: absolute;
-  font-family: 'Russo One', sans-serif;
-  font-size: 29px;
-  left: 100%;
-  bottom: 8%;
-  color: 8b4513;
-  text-shadow: 1px 1px #000;
-  
-}
+
 
 
 
@@ -751,17 +745,13 @@ body,
 
 .belowspeaker {
   position: absolute;
-  width: 92%;
+  width: 834px;
   height: 25%;
   top: 67%;
   background: url(Images/3.jpg);
       background-size: auto auto;
-  background-size: auto auto;
-  background-size: auto auto;
-  background-size: auto auto;
-  background-size: auto auto;
   background-size: cover;
-  left: 36px;
+  left: 37px;
   border-radius: 8px;
-box-shadow: 1px 1px 0px black;
+  box-shadow: 3px 4px 6px black;
 }
