@@ -1,72 +1,44 @@
-
+<html>
 <head>
-  <link rel="stylesheet" href="radio.css">
+    <link rel="stylesheet" href="radio.css">
 </head>
-
-<body class="bg">
-      <div class="wrapper">
+<body onload="startTime()">
+       
          
-
-          <div class="headerbar" >          
+             
+  <div class="wrapper">
+        <div  class="Title">SOT.FM</div>
+            
+        <div class="menu1">
+                  <img src="Images/about.png" alt="Smiley face" width="35" height="35">
+       </div>
+         <div class="menu2">
+                     <img src="Images/contact.png" alt="Smiley face" width="35" height="35">
+         </div>        
+                   
+          <div class="menu3">
+             <img src="Images/share.png" alt="Smiley face" width="35" height="35">
+                     
+             
          </div>
-         <div  class="Title">SOT.FM</div>
-         
-         <div class="menu1">
-                   <img src="Images/about.png" alt="Smiley face" width="35" height="35">
-        </div>
-          <div class="menu2">
-                      <img src="Images/contact.png" alt="Smiley face" width="35" height="35">
-          </div>        
-                    
-           <div class="menu3">
-              <img src="Images/share.png" alt="Smiley face" width="35" height="35">
-                      
-              
-          </div>
-    
-        </div>
-          </div>
-          
-        
-          <div class="player_main">
-
-              <div class="player">
-
-                  <div class="player_foot"></div>
-                  <div class="player_foot2"></div>
-                  <div class="main_shadow"></div>
-                  
-          <div class="second_plate">
-            <div class="speaker_cover">
+   
+       <div class="player_main">
+      <div class="player">
+        <div class="player_foot"></div>
+        <div class="player_foot2"></div>
+        <div class="main_shadow"></div>
+        <div class="second_plate">
+          <div class="speaker_cover">
                 <div class="logo2"></div>
-                
-                <div class="speaker_shadow">
-                </div>
-                 </div>
-            <div class="controls_main">
-              <div class="metal_basel_inside">
-                <div class="metal_basel_cover"></div>
-              </div>
-              
-              <div class="metal_brush"></div>
-              
-
-              </div>
-              </div>
-              <div class="belowspeaker"></div>
-            <div class="controls_fm_main">
-
-              <span class="vol">VOLUME</span>
-              <span class="min">MIN</span>
-              <span class="max">MAX</span>
-  
-              <ul class="off">
-                
-                <li style="position: absolute;left: 40px;">OFF</li>
-                <li style="position: absolute;left: 121px;">ON</li>
-              </ul>
-
-              <div class="fm_main">
+            <div class="speaker_shadow">
+            
+            </div>
+          </div>
+          <div class="belowspeaker"></div>
+          <div class="controls_main">
+                     </div>
+            
+            <div class="fm_main">
                 <p id="text" style="display:none; color:green; position: absolute; left: 3%; top: -3%; font-size: 80%;">ON</p>
                 <p id="text1" style="display:block; color:red ;position: absolute; left: 3%; top: -3%; font-size: 80%;">OFF</p>
                 <body onload="startTime()">
@@ -82,41 +54,54 @@
              <marquee behavior="scroll" direction="left" style="color: white;position: absolute;top: 45%;width:335px;font-size: 15px;">Welcome To SOT.FM - SOT.FM is part of Sound of Trumpet Records.
              </marquee>
                   </div>
-                <div class="fm_glass"></div>
+              <div class="fm_glass"></div>
 
-              </div>
-                
-              <div class="mini_main">
-                <div class="tune_mini_circle"></div>
-                
-                <div class="tune_mini_circle_2">
-                                    <i><audio id="musicPlayer" src=""></audio></i>
-                  </label>
-                  <span></span>
-                </div>
-              </div>
+</div>
+              <div class="controls_fm_main">
+              <span class="vol">VOLUME</span>
+              <span class="min">MIN</span>
+              <span class="max">MAX</span>
 
-  
-  
-                    </div>
+              <ul class="off">
+                <li style="position: absolute;left: 29px;">OFF</li>
+                <li style="position: absolute;left: 105px;">ON</li>
+              </ul>
+
+           
+
+
+              <div class="controls_fm">
+              
+
+                <div class="mini_main">
+                 
+                  <div class="tune_mini_circle">
                   </div>
                 </div>
-                <div class="footer">
-                                     </div>
 
-                 
-                
-  
+                <div class="mini_main">
+                  
+                  <div class="tune_mini_circle_2">
+                        <i><audio id="musicPlayer" src="http://17603.live.streamtheworld.com:80/WMCAAM_SC"></audio></i>
+                    </label>
+                    <span></span>
+
+                  </div>
+                </div>
               </div>
+              
+
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenLite.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/utils/Draggable.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
-    <script src="js/radio.js" type="text/javascript"></script>
-  </body>
+  </div>
+  <script src="js/Dependencies/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/Dependencies/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="js/Dependencies/TweenLite.min.js"></script>
+  <script src="js/Dependencies/Draggable.min.js"></script>
+  <script src="js/Dependencies/CSSPlugin.min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
