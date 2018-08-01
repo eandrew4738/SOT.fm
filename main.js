@@ -1,9 +1,7 @@
 var tune = $(".tune_mini_circle_2");
 var volume = $(".tune_mini_circle");
-var fm_slider = $(".tune_circle");
 var angle = tune.css("transform", "rotate");
-var fm_pole = $(".fm_slider_bar");
-var fm_pole_loc = fm_pole.css("left");
+
 
 // interaction functions
 
@@ -68,25 +66,6 @@ $(function functionName() {
       } else {
         $("#musicPlayer").prop("volume", ((endValue / 240) + middle));
       }
-      return Math.round(endValue / 20) * 20;
-    }
-  });
-
-
-  // FM CONTROLS
-  var radio = $(".radio_list");
-  var filename;
-
-  Draggable.create(fm_slider, {
-    type: "rotation",
-    throwProps: true,
-    bounds: {
-      minRotation: -100,
-      maxRotation: 100,
-    },
-    liveSnap: function(endValue) {
-
-      fm_pole.css("left", endValue + 150);
       return Math.round(endValue / 20) * 20;
     }
   });
