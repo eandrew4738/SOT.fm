@@ -5,6 +5,7 @@
 @import 'https://fonts.googleapis.com/css?family=Asap:400,700';
 @import 'https://fonts.googleapis.com/css?family=Pathway+Gothic+One';
 
+
 /*Website*/
 
 body,
@@ -22,6 +23,59 @@ html {
   background-image: url("Images/Background.JPG");
   background-size: cover;
   }
+
+  .Title 
+  {
+    font-family: 'Russo One', sans-serif;
+    text-shadow: 2px 2px #331900;
+    position: absolute;
+    left: 2%;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 163%;
+    line-height: 176%;
+  }
+/*menu1*/
+
+.menu1
+{
+  float: right;
+  position: absolute;
+  left: 87%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 27px;
+  padding: 5px 10px;
+}
+
+/*menu2*/
+
+.menu2 
+{
+  float: right;
+  position: absolute;
+  left: 91%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 27px;
+  padding: 5px 10px;
+}
+
+/*menu3*/
+
+.menu3 
+{
+  float: right;
+  position: absolute;
+  left: 95%;
+  top: 0%;
+  display: inline-block;
+  color: #ffffff;
+  line-height: 27px;
+ padding: 5px 10px;
+}
 
 
 
@@ -111,6 +165,23 @@ html {
     border-radius: 8px;  
 }
 
+.logo2 {
+  position: absolute;
+  width: 17%;
+  height: 34%;
+  background-image: url('Images/logos2.png');
+  background-repeat: no-repeat;
+  background-position-x: top;
+  float: center;
+  right: 2%;
+  margin-top: -4px;
+  transform: rotate(0deg);
+  cursor: pointer;
+  top: 5%;
+  background-size: contain;
+  border-radius: 25%;
+   }
+   
 .belowspeaker {
     position: absolute;
     width: 834px;
@@ -135,6 +206,7 @@ html {
   box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.53);
   overflow: hidden;
   border-radius: 8px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .fm_glass {
@@ -149,8 +221,7 @@ html {
     background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0.19) 57%, rgba(255, 255, 255, 0) 63%);
     background: linear-gradient(135deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0.19) 57%, rgba(255, 255, 255, 0) 63%);
     opacity: 0.2;
-  
-  }
+    }
 
 .controls_fm_main {
   position: absolute;
@@ -162,95 +233,34 @@ html {
   transform: translateX(-50%);
 }
 
-
-
-/*--CIRCLE CONTROLS--*/
-
-.tune_circle {
-  position: relative;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: -webkit-linear-gradient(top, rgb(182, 182, 139), rgb(135, 135, 99));
-  background: -moz-linear-gradient(top, rgb(182, 182, 139), rgb(135, 135, 99));
-  background: linear-gradient(to bottom, rrgb(182, 182, 139), rgb(135, 135, 99));
-  float: right;
-  margin-top: 40px;
-  border: 1px solid rgb(85, 85, 85);
-  transform: rotate(0deg);
-  cursor: pointer;
-}
-
-.tune_circle::after {
-  content: "";
-  display: block;
-  position: absolute;
-  background: -webkit-linear-gradient(top, #fdfde5, #cdc79a);
-  background: -moz-linear-gradient(top, #fdfde5, #cdc79a);
-  background: linear-gradient(to bottom, #fdfde5, #cdc79a);
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  cursor: pointer;
-}
-
-.green_light {
-  display: block;
-  position: absolute;
-  width: 7px;
-  height: 20px;
-  background: lightgreen;
-  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.30);
-  right: 61px;
-  top: 28px;
-  transition: background 0.2s ease-in-out;
-  z-index: -1;
-}
-
-.tune_circle_shadow {
-  position: absolute;
-  width: 105px;
-  height: 150px;
-  display: block;
-  background: rgb(68, 68, 68);
-  border-radius: 15%;
-  -webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);
-  top: 80px;
-  right: 0;
-  opacity: 0.1;
-}
-
-
 /*MINI CIRCLES #1*/
 
-.mini_main {
-  position: relative;
-  top: 35%;
-  left: -24px;
-  width: 100px;
-  height: 60px;
-  display: inline-block;
-}
+.mini_main 
+  {
+    position: relative;
+    top: 35%;
+    left: -24px;
+    width: 100px;
+    height: 60px;
+    display: inline-block;
+  }
 
-.tune_mini_circle {
+.tune_mini_circle 
+  {
     display: block;
     position: absolute;
     left: 500%;
-width: 80px;
-top: 240%;
-height: 80px;
+    width: 80px;
+    top: 240%;
+    height: 80px;
     border-radius: 50%;
     background: url(Images/power2.jpg);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     transform: rotate(0deg);
-    box-shadow: inset 0 1px 0 rgba(0,0,0,0.8), 0 0 6px rgba(0, 0, 0, 0.7), 1px 2px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 1px 0 rgba(0,0,0,0.8),
+                      0 0 6px rgba(0, 0, 0, 0.7), 
+                      1px 2px 1px rgba(0, 0, 0, 0.7);
   }
   
   .tune_mini_circle:after {
@@ -307,6 +317,7 @@ height: 80px;
     top: 240%;
     background: url(Images/power2.jpg);
     box-shadow: inset 0 1px 0 rgba(0,0,0,0.8), 0 0 6px rgba(0, 0, 0, 0.7), 1px 2px 1px rgba(0, 0, 0, 0.7);
+  
   }
 
   .tune_mini_circle_2::after {
@@ -345,7 +356,7 @@ height: 80px;
   }
 
 .tune_mini_circle_2 {
-  left: -275%;
+  left: -171%;
 }
 
 
@@ -433,38 +444,6 @@ height: 80px;
 }
 
 
-.tune {
-  position: absolute;
-  font-family: 'Asap', sans-serif;
-  font-size: 12px;
-  top: 45px;
-  right: 120px;
-  font-weight: 700;
-  color: #523b38;
-}
-
-.text_logo {
-  position: absolute;
-  font-family: 'Russo One', sans-serif;
-  font-size: 22px;
-  bottom: 19px;
-  color: #5b423e;
-}
-
-.text_info {
-  position: absolute;
-  font-family: 'Asap', sans-serif;
-  font-size: 10px;
-  bottom: 23px;
-  left: 115px;
-  color: #523b38;
-}
-
-
-/*player interactions */
-
-
-
 .tune_mini_circle_2 {
   transform: rotate(-25deg);
   cursor: pointer;
@@ -477,75 +456,57 @@ height: 80px;
   transition: transform 0.1s ease-out;
 }
 
-.logo2 {
-    position: absolute;
-    width: 17%;
-    height: 34%;
-    background-image: url('Images/logos2.png');
-    background-repeat: no-repeat;
-    background-position-x: top;
-    float: center;
-    right: 2%;
-    margin-top: -4px;
-    transform: rotate(0deg);
-    cursor: pointer;
-    top: 5%;
-    background-size: contain;
-    border-radius: 25%;
-   
-  }
+#text
+{
+  display:none; 
+  color:green; 
+  position: absolute; 
+  left: 3%; 
+  top: -3%; 
+  font-size: 80%;
+}
 
-  .Title 
-  {
-    font-family: 'Russo One', sans-serif;
-    text-shadow: 2px 2px #331900;
-    position: absolute;
-    left: 2%;
-    display: inline-block;
-    color: #ffffff;
-    font-size: 163%;
-    line-height: 176%;
-  }
+#text1
+{
+  display:block; 
+  color:red ;
+  position: absolute; 
+  left: 3%; 
+  top: -3%; 
+  font-size: 80%;
+}
 
-/*menu1*/
+.radioco_song {
+  display: block;
+  color: #ffffff;
+  position: absolute;
+  left: 25%;
+  top: 32%;
+}
 
-  .menu1
-  {
-    float: right;
-    position: absolute;
-    left: 87%;
-    top: 0%;
-    display: inline-block;
-    color: #ffffff;
-    line-height: 27px;
-    padding: 5px 10px;
-  }
+.radioco_status {
+display: block;
+color: #ffffff;
+position: absolute;
+left: 86%;
+top: 72%;
+font-size: 12px;
+}
 
-/*menu2*/
+.radioco_next {
+display: block;
+color: #ffffff;
+position: absolute;
+left: 25%;
+top: 54%;
+font-size: 11px;
+}
 
-  .menu2 
-  {
-    float: right;
-    position: absolute;
-    left: 91%;
-    top: 0%;
-    display: inline-block;
-    color: #ffffff;
-    line-height: 27px;
-    padding: 5px 10px;
-  }
+#musicPlayer
+{
+  display: block;
+  color: #ffffff;
+}
 
-/*menu3*/
 
-  .menu3 
-  {
-    float: right;
-    position: absolute;
-    left: 95%;
-    top: 0%;
-    display: inline-block;
-    color: #ffffff;
-    line-height: 27px;
-   padding: 5px 10px;
-  }
 
