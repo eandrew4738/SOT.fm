@@ -92,7 +92,7 @@ function checkTime(i) {
 $( document ).ready(function() {
   $('.radioco_artwork').bind('DOMNodeInserted', function(event) {
     
-    if($(this).children('img').attr("src") == "https://images.radio.co/station_logos/") {
+    if($(this).children('img').attr("src") === "https://images.radio.co/station_logos/") {
       $(this).children('img').attr("src","./Images/default.png");
     }
     $(this).children('img').css({"width":"80px", "height":"80px"});
