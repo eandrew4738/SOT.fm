@@ -70,7 +70,7 @@ html {
   float: right;
   position: absolute;
   left: 95%;
-  top: 0%;
+  top: 2%;
   display: inline-block;
   color: #ffffff;
   line-height: 27px;
@@ -213,25 +213,7 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
-#text
-{
-  display:none; 
-  color:green; 
-  position: absolute; 
-  left: 3%; 
-  top: -3%; 
-  font-size: 80%;
-}
 
-#text1
-{
-  display:block; 
-  color:red ;
-  position: absolute; 
-  left: 3%; 
-  top: -3%; 
-  font-size: 80%;
-}
 
 .radioco_song {
   display: block;
@@ -259,34 +241,34 @@ top: 54%;
 font-size: 11px;
 }
 
-#timeText
-{
-  color: white;
+.fm_main1 {
   position: absolute;
-  left: 85%;
-  top: 10%;
-  font-size:77%;
+  height: 100px;
+  width: 100%;
+  left: 0%;
+  top: 0%;
+  background-color: #f80;
+  border-top-color: #ffc480;
+  border-left-color: #ffac4d;
+  border-right-color: #b35f00;
+  border-bottom-color: #b35f00;
+  
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5), 0.4rem 0.4rem 0.1rem 0 rgba(0, 0, 0, 0.25), 0 0 0.8rem 0.4rem rgba(255, 136, 0, 0.875), 0 0 6.4rem 0.8rem rgba(255, 136, 0, 0.75);
 }
 
-.fm_glass {
 
-    position: absolute;
-    width: 101%;
-    height: 108%;
-    left: -2px;
-    top: -5px;
-    display: block;
-    z-index: 2;
-    background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 1) 3%,
-                                                rgba(255, 255, 255, 1) 32%, 
-                                                rgba(255, 255, 255, 0.19) 57%,
-                                                rgba(255, 255, 255, 0) 63%);
-    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 3%,
-                                        rgba(255, 255, 255, 1) 32%,
-                                        rgba(255, 255, 255, 0.19) 57%, 
-                                        rgba(255, 255, 255, 0) 63%);
-    opacity: 0.2;
-    }
+.fm_glass {
+  position: absolute;
+  width: 101%;
+  height: 101%;
+  left: -2px;
+  top: 0px;
+  display: block;
+  z-index: 2;
+  background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0.19) 57%, rgba(255, 255, 255, 0) 63%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 32%, rgba(255, 255, 255, 0.19) 57%, rgba(255, 255, 255, 0) 63%);
+  opacity: 0.2;
+}
 
 .controls_fm_main {
   position: absolute;
@@ -563,10 +545,13 @@ font-size: 11px;
   /* IE6-9 */
 }
 
-#artwork
-{
-  position: absolute;
-}
+.radioco_artwork>img {
+  width:80px;
+  height:80px;
+  margin-top: 10px;
+  margin-left: 10px;
+ }
+
 
 
 
