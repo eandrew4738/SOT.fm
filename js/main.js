@@ -21,7 +21,7 @@ $(function functionName() {
       var text = document.getElementById("text");
       var displayText = document.getElementById("displayText");
 
-      console.log(endvalue);
+      console.log(endValue);
       
       if (endValue < 40) {
         text.style.display = "none",
@@ -33,6 +33,7 @@ $(function functionName() {
           $("#musicPlayer").trigger('play');
           $("#displayText").show();
       }
+
       var text = document.getElementById("text1");
       if (endValue < 40) {
         text.style.display = "block",
