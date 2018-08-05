@@ -8,8 +8,6 @@ var angle = tune.css("transform", "rotate");
 $(function functionName() {
 
   // ON/OFF CONTROLS
-
-  
   var text = document.getElementById("text");
   Draggable.create(tune, {
     type: "rotation",
@@ -23,6 +21,8 @@ $(function functionName() {
       var text = document.getElementById("text");
       var displayText = document.getElementById("displayText");
 
+      console.log(endvalue);
+      
       if (endValue < 40) {
         text.style.display = "none",
           $("#musicPlayer").trigger('pause');
