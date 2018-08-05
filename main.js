@@ -34,16 +34,7 @@ $(function functionName() {
           $("#musicPlayer").trigger('play');
           $("#displayText").show();
       }
-      var text = document.getElementById("text1");
-      if (endValue < 40) {
-        text.style.display = "block",
-          $("#musicPlayer").trigger('pause');
-          $("#displayText").hide();
-      } else {
-        text.style.display = "none",
-          $("#musicPlayer").trigger('play');
-          $("#displayText").show();
-      }
+    
       return Math.round(endValue / 40) * 40;
     }
   });
@@ -74,9 +65,10 @@ $(function functionName() {
 });
 
 
-$(document).ready(function() {
-      console.log("Trigger");
-        if($('.radioco_artwork').children('img').attr("src") === "https://images.radio.co/station_logos/") {
-          $('.radioco_artwork').children('img').attr("src","./Images/default.png");
-        }
-});
+$( "img" )
+  .error(function() {
+    $( this ).attr( "src", "./Images/default.png" );
+  })
+  .attr( "src", "https://images.radio.co/station_logos/" );
+    
+   

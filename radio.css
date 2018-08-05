@@ -70,7 +70,7 @@ html {
   float: right;
   position: absolute;
   left: 95%;
-  top: 2%;
+  top: 0%;
   display: inline-block;
   color: #ffffff;
   line-height: 27px;
@@ -213,32 +213,52 @@ html {
   font-family: 'Quicksand', sans-serif;
 }
 
-
-
-.radioco_song {
+.now {
   display: block;
-  color: #ffffff;
+  color: #000000;
   position: absolute;
   left: 25%;
   top: 32%;
+  font-weight: bold;
+}
+
+.next {
+  display: block;
+  color: #000000;
+  position: absolute;
+  left: 179px;
+  top: 54%;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.radioco_song {
+  display: block;
+  color: #000000;
+  position: absolute;
+  left: 46%;
+  top: 32%;
+  font-weight: bold;
 }
 
 .radioco_status {
 display: block;
-color: #ffffff;
+color: #000000;
 position: absolute;
 left: 86%;
 top: 72%;
 font-size: 12px;
+font-weight: bold;
 }
 
 .radioco_next {
 display: block;
-color: #ffffff;
+color: #000000;
 position: absolute;
-left: 25%;
+left: 46%;
 top: 54%;
 font-size: 11px;
+font-weight: bold;
 }
 
 .fm_main1 {
@@ -347,7 +367,38 @@ font-size: 11px;
     z-index: 2;
   }
 
+  .shelf {
+    border-bottom: 30px solid #9a5938;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    z-index: -10;
+    left: -120px;
+    top: 77%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+    position: absolute;
+    width: 120%;
+    height: 20px;
+    margin: 100px auto 0;
+}
 
+  
+  .shelf::after {
+    content: '';
+    background: url(Images/7.jpg);
+    height: 20px;
+    width: calc(100% + 40px);
+    position: absolute;
+    top: 49px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 -20px;
+}
+
+
+   
 
 
 /*MINI CIRCLES #2*/
@@ -358,8 +409,8 @@ font-size: 11px;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY();
+    transform: translateY();
     transform: rotate();
     top: 240%;
     background: url(Images/5.jpg);
@@ -472,18 +523,6 @@ font-size: 11px;
     right: 7px;
 }
 
-.off li:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #f5deb3;;
-  bottom: -8px;
-  right: 13px;
-}
-
 .off li {
   font-size: 12px;
   font-family: 'Asap', sans-serif;
@@ -494,7 +533,7 @@ font-size: 11px;
 
 
 .tune_mini_circle_2 {
-  transform: rotate(-25deg);
+  transform: rotate(-40deg);
   cursor: pointer;
   transition: transform 0.1s ease-out;
 }
@@ -505,45 +544,6 @@ font-size: 11px;
   transition: transform 0.1s ease-out;
 }
 
-.shelf {
-  display: block;
-  position: absolute;
-  width: 113%;
-  height: 20px;
-  margin: 100px auto 0;
-  background-image: -moz-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
-  background-image: -webkit-gradient(90deg, left top, right bottom, color-stop(0%, #d1d8de), color-stop(100%, #eff1f3));
-  background-image: -webkit-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
-  background-image: -o-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
-  background-image: -ms-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff1f3', endColorstr='#d1d8de', GradientType='0' );
-  -webkit-box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
-  -moz-box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
-  box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
-  left: -6%;
-  top: 83%;
-}
-
-.shelf .reflection {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 1px;
-  width: 99.8%;
-  height: 1px;
-  background-image: -moz-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
-  /*FF3.6+ */
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(35%, rgba(255, 255, 255, 0.5)), color-stop(65%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0.7)));
-  /*Chrome,Safari4+ */
-  background-image: -webkit-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
-  /* Chrome10+,Safari5.1+ */
-  background-image: -o-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
-  /* Opera 11.10+ */
-  background-image: -ms-linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.5) 35%, #ffffff 65%, rgba(255, 255, 255, 0.7) 100%);
-  /*IE10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(255, 255, 255, 0.7)', endColorstr='#ffffff', GradientType='0' );
-  /* IE6-9 */
-}
 
 .radioco_artwork>img {
   width:80px;
