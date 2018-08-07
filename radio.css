@@ -234,32 +234,30 @@ html {
 
 .radioco_song {
   display: block;
-  color: #000000;
+  color: #ffffff;
   position: absolute;
-  left: 46%;
+  left: 25%;
   top: 32%;
-  font-weight: bold;
 }
 
 .radioco_status {
 display: block;
-color: #000000;
+color: #ffffff;
 position: absolute;
 left: 86%;
 top: 72%;
 font-size: 12px;
-font-weight: bold;
 }
 
 .radioco_next {
 display: block;
-color: #000000;
+color: #ffffff;
 position: absolute;
-left: 46%;
+left: 25%;
 top: 54%;
 font-size: 11px;
-font-weight: bold;
 }
+
 
 .fm_main1 {
   position: absolute;
@@ -386,7 +384,7 @@ font-weight: bold;
   
   .shelf::after {
     content: '';
-    background: url(Images/7.jpg);
+    background: url("Images/7.jpg");
     height: 20px;
     width: calc(100% + 40px);
     position: absolute;
