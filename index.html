@@ -4,25 +4,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="SOT.FM Radio">
-    <meta name="author" content="">
-    <link rel="icon" href="Images/audio_radio_icon_0.ico">
-    <link rel="stylesheet" href="css/radio.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
-    <title>SOT.FM Radio</title>
+    <meta name="author" content="Sound of Trumpet">
 
+    <link rel="icon" href="Images/audio_radio_icon_0.ico">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+ 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    
     <!-- Custom styles for this template -->
+    <link href="css/radio.css" rel="stylesheet">
     <link href="css/cover.css" rel="stylesheet">
+    <link href="css/shelf.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <title>SOT.FM Radio</title>
+
   </head>
 
   <body>
@@ -115,7 +120,11 @@
     
               </div>
     
-              <div class="shelf"></div>
+              <div id="shelf">
+              <!--  <div class="top"></div> -->
+                <div class="front"></div>
+                <div class="shadow"></div>
+              </div>
     
             </div>
           </div>
@@ -137,13 +146,13 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/Dependencies/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="js/Dependencies/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/Dependencies/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="js/Dependencies/TweenLite.min.js"></script>
-    <script src="js/Dependencies/Draggable.min.js"></script>
-    <script src="js/Dependencies/CSSPlugin.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="node_modules/jquery-ui-dist/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="node_modules/gsap/src/minified/TweenLite.min.js" type="text/javascript"></script>
+    <script src="node_modules/gsap/src/minified/utils/Draggable.min.js" type="text/javascript"></script>
+    <script src="node_modules/gsap/src/minified/plugins/CSSPlugin.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
 
   </body>
