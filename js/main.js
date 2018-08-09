@@ -1,3 +1,36 @@
+function offlineDetect() {
+    if( $(".radioco_status").html() === "offline" ) {
+      $(".radioco_song").hide();
+      $(".radioco_next").hide();
+      $(".radioco_artwork").hide();
+      $(".next").hide();
+      $(".now").hide();
+      $(".online_green").hide();
+      $(".offline_red").show();
+      $(".radio_offline").show();
+    }
+    else {
+      $(".radioco_song").show();
+      $(".radioco_next").show();
+      $(".radioco_artwork").show();
+      $(".next").show();
+      $(".now").show();
+      $(".online_green").show();
+      $(".offline_red").hide();
+      $(".radio_offline").hide();
+    }
+}
+
+$(document).ready(function() {
+  setTimeout(function() {
+    offlineDetect();
+  },2000);
+  setInterval(function() {
+      offlineDetect();
+  },2000);
+
+});
+
 var tune = $(".tune_mini_circle_2");
 var volume = $(".tune_mini_circle");
 var angle = tune.css("transform", "rotate");
@@ -62,15 +95,4 @@ $(function functionName() {
     }
   });
 
-});
-
-
-$( document ).ready(function() {
-  $('.radioco_artwork').bind('DOMNodeInserted', function(event) {
-    
-    if($(this).children('img').attr("src") === "https://images.radio.co/station_logos/") {
-      $(this).children('img').attr("src","./Images/default.png");
-    }
-    $(this).children('img').css({"width":"80px", "height":"80px"});
-  });
 });
