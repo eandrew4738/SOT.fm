@@ -4,30 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="SOT.FM Radio">
-    <meta name="author" content="Sound of Trumpet">
-
+    <meta name="author" content="">
     <link rel="icon" href="Images/audio_radio_icon_0.ico">
+    <link rel="stylesheet" href="css/radio.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
- 
+    <title>SOT.FM Radio</title>
+
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Custom styles for this template -->
-    <link href="css/radio.css" rel="stylesheet">
     <link href="css/cover.css" rel="stylesheet">
-    <link href="css/shelf.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <title>SOT.FM Radio</title>
-
   </head>
 
   <body>
@@ -40,12 +35,12 @@
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h2 class="masthead-brand" style="font-family: 'Quicksand', sans-serif">SOT.FM</h2>
+              <h3 class="masthead-brand">SOT.FM</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="#" style="font-family: 'Quicksand', sans-serif">About</a></li>
-                  <li><a href="#" style="font-family: 'Quicksand', sans-serif">Contact</a></li>
-                  <li><a href="#" style="font-family: 'Quicksand', sans-serif">Share</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Share</a></li>
                 </ul>
               </nav>
             </div>
@@ -75,14 +70,15 @@
                     <p id="text1"></p>
                     
                     <div id="displayText" style="display:none;">
+                   
                       <div class="fm_main1">
                         <span class="now">Now playing:</span>
                         <span class="next">Up next:</span>  
-                        <script src="https://embed.radio.co/embed/s506afb1b1/song.js"></script>
-                        <script src="https://embed.radio.co/embed/s506afb1b1/status.js"></script>
-                        <script src="https://embed.radio.co/embed/s506afb1b1/next.js"></script>
-                        <script src="https://embed.radio.co/embed/s506afb1b1/artwork.js"></script>
-                      </div>         
+                      <script src="https://embed.radio.co/embed/s506afb1b1/song.js"></script>
+                      <script src="https://embed.radio.co/embed/s506afb1b1/status.js"></script>
+                      <script src="https://embed.radio.co/embed/s506afb1b1/next.js"></script>
+                      <script src="https://embed.radio.co/embed/s506afb1b1/artwork.js"></script>
+                    </div>                        
                     </div>
                     <div class="fm_glass"></div>
                     
@@ -121,14 +117,15 @@
               </div>
     
               <div id="shelf">
-              <!--  <div class="top"></div> -->
+                <div class="top"></div>
                 <div class="front"></div>
-                <div class="shadow"></div>
               </div>
-    
             </div>
+            
           </div>
-
+          
+          
+          
           <div class="mastfoot">
             <div class="inner">
               <p>Test Footer.</p>
@@ -150,9 +147,9 @@
 
     <script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="node_modules/jquery-ui-dist/jquery-ui.min.js" type="text/javascript"></script>
-    <script src="node_modules/gsap/src/minified/TweenLite.min.js" type="text/javascript"></script>
-    <script src="node_modules/gsap/src/minified/utils/Draggable.min.js" type="text/javascript"></script>
-    <script src="node_modules/gsap/src/minified/plugins/CSSPlugin.min.js" type="text/javascript"></script>
+    <script src="node_modules/gsap/src/minified/TweenLite.min.js"></script>
+    <script src="node_modules/gsap/src/minified/utils/Draggable.min.js"></script>
+    <script src="node_modules/gsap/src/minified/plugins/CSSPlugin.min.js"></script>
     <script src="js/main.js" type="text/javascript"></script>
 
   </body>

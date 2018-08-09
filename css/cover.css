@@ -137,11 +137,11 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: absolute;
+    position: fixed;
     top: 0;
   }
   .mastfoot {
-    position: absolute;
+    position: fixed;
     bottom: 0;
   }
   /* Start the vertical centering */

@@ -16,32 +16,25 @@ $(function functionName() {
       minRotation: -40,
       maxRotation: 40
     },
+    
     liveSnap: function (endValue)
      {
       var text = document.getElementById("text");
       var displayText = document.getElementById("displayText");
+
+      console.log(endValue);
       
-      if (endValue < 40) {
+      if (endValue == -40) {
         text.style.display = "none",
           $("#musicPlayer").trigger('pause');
           $("#displayText").hide();
       }
-      else {
+      else if(endValue = 40) {
         text.style.display = "block",
           $("#musicPlayer").trigger('play');
           $("#displayText").show();
       }
 
-      var text = document.getElementById("text1");
-      if (endValue < 40) {
-        text.style.display = "block",
-          $("#musicPlayer").trigger('pause');
-          $("#displayText").hide();
-      } else {
-        text.style.display = "none",
-          $("#musicPlayer").trigger('play');
-          $("#displayText").show();
-      }
       return Math.round(endValue / 40) * 40;
     }
   });
@@ -70,6 +63,7 @@ $(function functionName() {
   });
 
 });
+
 
 $( document ).ready(function() {
   $('.radioco_artwork').bind('DOMNodeInserted', function(event) {
