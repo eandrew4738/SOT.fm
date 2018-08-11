@@ -99,7 +99,7 @@ html
     position: absolute;
     width: 891px;
     height: 475px;
-    background: black;
+    background: url(../Images/8.jpg);
     bottom: 12px;
     right: 9px;
     border-radius: 14px;
@@ -125,14 +125,14 @@ html
 .speaker_cover 
   {
     position: absolute;
-    width: 97%;
-    height: 63%;
-    top: 3%;
+    width: 96%;
+    height: 61%;
+    top: 4%;
     background: url(../Images/3.jpg);
-    background-size:cover;
+    background-size: cover;
     box-shadow: 0 0 20px #000;
-    left: 13px;
-    border-radius: 8px;  
+    left: 17px;
+    border-radius: 8px;
   }
 
 .logo2 
@@ -156,14 +156,14 @@ html
 .belowspeaker 
   {
     position: absolute;
-    width: 834px;
-    height: 28%;
-    top: 70%;
+    width: 821px;
+    height: 27%;
+    top: 303px;
     background: url(../Images/4.jpg);
     background-size: cover;
-    left: 10px;
+    left: 17px;
     border-radius: 8px;
-    box-shadow: 3px 4px 6px black;
+    box-shadow: 0 0 20px #000;;
   }
 
 .fm_main 
@@ -172,8 +172,8 @@ html
     height: 101px;
     width: 59%;
     background: black;
-    left: 51%;
-    top: 73%;
+    left: 50%;
+    top: 312px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.53);
@@ -339,8 +339,8 @@ html
     position: absolute;
     width: 350px;
     height: 200px;
-    bottom: 40px;
-    left: 50%;
+    bottom: 44px;
+    left: 49%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -410,7 +410,7 @@ html
     height: 4px;
     border-radius: 50%;
     background: #f5deb3;
-    bottom: -8px;
+    bottom: -9px;
     right: 7px;
   }
 
@@ -453,9 +453,9 @@ html
     display: block;
     position: absolute;
     left: 500%;
-    width: 80px;
+    width: 75px;
     top: 240%;
-    height: 80px;
+    height: 75px;
     border-radius: 50%;
     background: url(../Images/5.jpg);
     -webkit-transform: translateY(-50%);
@@ -471,8 +471,8 @@ html
     content: "";
     position: absolute;
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     background: url(../Images/6.jpg);
     border-radius: 50%;
     left: 50%;
@@ -516,8 +516,8 @@ html
   {
     display: block;
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -539,8 +539,8 @@ html
     -webkit-transform: translate(-50%, -50%);
     position: absolute;
     display: block;
-    width: 48px;
-    height: 48px;
+    width: 45px;
+    height: 45px;
     background: -webkit-linear-gradient(top, rgb(228, 228, 177), 
                                              rgb(187, 187, 137));
     background: -webkit-linear-gradient(top, #fdfde5, #cdc79a);
@@ -588,29 +588,15 @@ html
     bottom: -7%;
   }
 
-.top 
-  {
-    width: 108%;
-    height: 114px;
-    background: 7px 0 url(../Images/7.jpg);
-    background-size: cover;
-    position: absolute;
-    top: -5px;
-    left: -35px;
-    transform: perspective(300px) rotateX(75deg);
-    box-shadow: inset 0 40px 130px -20px #16120d;
-  }
-
 .front 
   {
-    width: 133%;
-    height: 29px;
+    width: 110%;
+    height: 40px;
     background: url(../Images/7.jpg);
     position: absolute;
-    bottom: -28px;
-    box-shadow: inset 0 1px 1px 0 #776959, 
-                inset 0 -2px 20px -2px #16120D;
-    left: -16%;
+    bottom: -23px;
+    left: -40px;
+    box-shadow: -14px -5px 34px 10px #000;
   }
 
 
