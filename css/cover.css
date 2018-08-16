@@ -32,7 +32,7 @@ body {
   background-size: cover;
 }
 body {
-  color: #fff;
+  color:black;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
@@ -80,8 +80,8 @@ body {
   padding-left: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
+  /* IE8 proofing */
+  color: black;
   border-bottom: 2px solid transparent;
 }
 .masthead-nav > li > a:hover,
@@ -93,7 +93,7 @@ body {
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
-  color: #fff;
+  color: #(255,255,255,.75);
   border-bottom-color: #fff;
 }
 

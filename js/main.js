@@ -96,3 +96,14 @@ $(function functionName() {
   });
 
 });
+
+$('.social-toggle').on('click', function() {
+  $(this).next().toggleClass('open-menu');
+});
+
+$('.contact-toggle').on('click', function() {
+  $(this).next().toggleClass('open-menu');
+});
+
+
+

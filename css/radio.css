@@ -33,7 +33,7 @@ html
     position: absolute;
     left: 2%;
     display: inline-block;
-    color: #ffffff;
+    color: rgba(255,255,255,.75)  ;
     font-size: 163%;
     line-height: 176%;
   }
@@ -53,12 +53,12 @@ html
 .player 
   {
     position: relative;
-    width: 909px;
-    height: 496px;
-    border-radius: 14px;
+    width: 960px;
+    height: 507px;
+    border-radius: 40px;
     background: url(../Images/1.jpg);
     background-size: cover;
-  }
+      }
 
 .player_foot 
   {
@@ -97,14 +97,13 @@ html
 .main_shadow 
   {
     position: absolute;
-    width: 891px;
-    height: 475px;
-    background: url(../Images/8.jpg);
-    bottom: 12px;
-    right: 9px;
-    border-radius: 14px;
-    opacity: 0.4;
-    filter: blur(2px);
+    top: 6px;
+    left: 7px;
+    width: 956px;
+    height: 99%;
+    border-radius: 33px / 39px;
+    box-shadow: -7px -7px 5px #000;
+    opacity: 0.6;
   }
 
 .second_plate 
@@ -116,23 +115,23 @@ html
     border-radius: 14px;
     background-size: contain;
     left: 50%;
-    top: 50%;
+    top: 52%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: 1px solid rgb(85, 85, 85);
+    box-shadow: inset 0 0 35px #000000;
   }
 
 .speaker_cover 
   {
     position: absolute;
-    width: 96%;
-    height: 61%;
-    top: 4%;
+    width: 94%;
+    height: 59%;
+    top: 5%;
     background: url(../Images/3.jpg);
     background-size: cover;
-    box-shadow: 0 0 20px #000;
-    left: 17px;
+    left: 24px;
     border-radius: 8px;
+    box-shadow: inset 0 0 10px #000000;
   }
 
 .logo2 
@@ -156,24 +155,24 @@ html
 .belowspeaker 
   {
     position: absolute;
-    width: 821px;
+    width: 94%;
     height: 27%;
-    top: 303px;
+    bottom: 20px;
     background: url(../Images/4.jpg);
     background-size: cover;
-    left: 17px;
+    left: 24px;
     border-radius: 8px;
-    box-shadow: 0 0 20px #000;;
+    box-shadow: inset 0 0 10px #868686;
   }
 
 .fm_main 
   {
     position: relative;
     height: 101px;
-    width: 59%;
+    width: 55%;
     background: black;
-    left: 50%;
-    top: 312px;
+    right: -424px;
+    bottom: -310px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.53);
@@ -215,7 +214,7 @@ html
     content: "";
     display: none;
     position: absolute;
-    right: 19px;
+    right: 15px;
     top: 75px;
     width: 12px;
     height: 12px;
@@ -236,7 +235,7 @@ html
     content: "";
     display: none;
     position: absolute;
-    right: 19px;
+    right: 15px;
     top: 75px;
     width: 12px;
     height: 12px;
@@ -258,8 +257,9 @@ html
     color: #000000;
     position: absolute;
     left: 20%;
-    top: 27%;
+    top: 26%;
     font-weight: bold;
+    font-size: 12px;
   }
   
 .next 
@@ -267,7 +267,7 @@ html
     display:none;
     color: #000000;
     position: absolute;
-    left: 150px;
+    left: 121px;
     top: 52%;
     font-weight: bold;
     font-size: 12px;
@@ -278,10 +278,10 @@ html
     display: block;
     color: #000000;
     position: absolute;
-    left: 41%;
-    top: 29%;
-    font-weight: bold;
+    left: 37%;
+    top: 23%;
     font-size: 15px;
+    font-weight: bold;
   }
   
 .radioco_status 
@@ -300,8 +300,8 @@ html
     display: block;
     color: #000000;
     position: absolute;
-    left: 41%;
-    top: 54%;
+    left: 175px;
+    top: 54px;
     font-size: 11px;
     font-weight: bold;
   }
@@ -311,7 +311,7 @@ html
     width:80px;
     height:80px;
     margin-top: 10px;
-    margin-left: -403px;
+    margin-left: -379px;
   }
 
 .fm_glass 
@@ -339,7 +339,7 @@ html
     position: absolute;
     width: 350px;
     height: 200px;
-    bottom: 44px;
+    bottom: 48px;
     left: 49%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -353,7 +353,7 @@ html
     font-family: 'Asap', sans-serif;
     font-size: 12px;
     top: 59%;
-    left: 140%;
+    left: 135%;
     font-weight: 700;
     color: #f5deb3;;
   }
@@ -366,7 +366,7 @@ html
     bottom: -8%;
     font-weight: bold;
     color: #f5deb3;
-    left: 131%;
+    left: 126%;
   }
 
 .max 
@@ -375,7 +375,7 @@ html
     font-family: 'Asap', sans-serif;
     font-size: 8px;
     bottom: -8%;
-    left: 159%;
+    left: 153%;
     font-weight: bold;
     color: #f5deb3;
   }
@@ -385,7 +385,7 @@ html
     position: absolute;
     list-style: none;
     top: 59%;
-    left: -66%;
+    left: -61%;
   }
 
 .off li:first-child::before 
@@ -441,8 +441,8 @@ html
 .mini_main 
   {
     position: relative;
-    top: 35%;
-    left: -150px;
+    top: -1%;
+    left: -38%;
     width: 100px;
     height: 60px;
     display: inline-block;
@@ -452,7 +452,7 @@ html
   {
     display: block;
     position: absolute;
-    left: 500%;
+    left: 468%  ;
     width: 75px;
     top: 240%;
     height: 75px;
@@ -569,7 +569,7 @@ html
 
 .tune_mini_circle_2 
   {
-    left: -171%;
+    left: -166%;
   }
 
 .tune_mini_circle_2 {
@@ -585,7 +585,7 @@ html
     margin: 100px auto 0;
     position: absolute;
     z-index: -10;
-    bottom: -7%;
+    bottom: -6%;
   }
 
 .front 
@@ -596,8 +596,115 @@ html
     position: absolute;
     bottom: -23px;
     left: -40px;
-    box-shadow: -14px -5px 34px 10px #000;
+    box-shadow: -9px -8px 15px 3px #0b0b0b;
+    background-size: cover;
   }
+
+  
+  .social-toggle {
+    display:block;
+    font-weight:bold;
+    font-size:90%;
+    text-align:center;
+    
+    transition:all 0.25s;
+    color:rgb(200,200,200);
+    background:rgba(200,200,200,.05);
+    
+  }
+  
+  .social-toggle:hover {
+    
+    color:black;
+  }
+  
+  .social-networks {
+    -webkit-transform-origin: 50% 0;
+    -ms-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0) translateY(-190px);
+    transform: scale(0) translateY(-190px);
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    margin-left: -45%;
+    /* stops flickering */
+    -webkit-backface-visibility: hidden;
+  }
+  
+  .fa
+  {
+    top: 5px;
+    position: relative;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .social-gplus {
+    background: #e34429;
+  }
+  
+  .social-twitter {
+    background: #6cdfea;
+  }
+  
+  .social-networks.open-menu, .no-js .social-networks {
+    -webkit-transform: scale(1) translateY(-90px);
+    transform: scale(1) translateY(-90px);
+    opacity:1;
+  }
+  
+  
+  .social-networks ul {
+    position: fixed;  
+    top:110px;
+    left:-50px;
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    background: #3b5998;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .social-networks ul:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 77px;
+    top: -43px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    transform: rotate(180deg);
+  }
+  
+  .social-networks.open-menu ul:after, .no-js .social-networks ul:after {
+    margin: 35px auto;
+    border-top: 12px solid #3b5998;
+  }
+    
+  .social-networks li {
+    font-size: 90%;
+    width: 60px;
+    margin: 0;
+    text-align: center;
+    float: left;
+    display: block;
+    height: 40px;
+    line-height:29px;
+    position: relative;
+    z-index: 2;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    transition: all .3s ease;
+  }  
 
 
 
