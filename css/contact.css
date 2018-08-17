@@ -1,13 +1,45 @@
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 3px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
 .contact-toggle {
   display:block;
   font-weight:bold;
   font-size:90%;
   text-align:center;
-  
   transition:all 0.25s;
   color:rgb(200,200,200);
   background:rgba(200,200,200,.05);
-  
+ 
 }
 
 .contact-toggle:hover {
@@ -15,7 +47,7 @@
   color:black;
 }
 
-.social-networks1h {
+.social-networks1 {
   -webkit-transform-origin: 50% 0;
   -ms-transform-origin: 50% 0;
   transform-origin: 50% 0;
@@ -29,8 +61,6 @@
   -webkit-backface-visibility: hidden;
 }
 
-
-
 .social-networks1.open-menu, .no-js .social-networks1 {
   -webkit-transform: scale(1) translateY(-90px);
   transform: scale(1) translateY(-90px);
@@ -40,15 +70,16 @@
 
 .social-networks1 div {
   position: fixed;
-  top: 110px;
-  left: -288%;
-    width: 360px;;
-  height: 577px;
-  color: #fff;
-  background: black;
-  margin: auto;
-  padding: 0;
-  list-style: none;
+    top: 110px;
+    left: -246%;
+    width: 320px;
+    height: 500px;
+    color: #fff;
+    background: black;
+    margin: auto;
+    padding: 10px;
+    list-style: none;
+    border-radius: 10px;
 }
 
 .social-networks1 div:after {
@@ -85,32 +116,4 @@
   box-sizing: content-box;
   transition: all .3s ease;
 }  
-
-
-
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 3px 14px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
 
