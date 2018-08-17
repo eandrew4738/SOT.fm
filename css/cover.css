@@ -68,6 +68,10 @@ body {
 .masthead-brand {
   margin-top: -5px;
   margin-bottom: 10px;
+  text-shadow: -4px 1px 3px rgba(0,0,0,.5);
+  font-weight: bolder;
+  color:  	rgb(59, 33, 21);
+  border: #333;
 }
 
 .masthead-nav > li {
