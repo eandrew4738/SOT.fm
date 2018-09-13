@@ -1,102 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
+    <body>
 <head>
 
   <title>SOT.FM Radio</title>
   <meta name="description" content="SOT.FM Radio">
   <meta name="author" content="">
   <link rel="icon" href="Images/audio_radio_icon_0.ico">
-  <link rel="stylesheet" href="css/radio.css">
-  <link rel="stylesheet" href="css/volume.css">
-  <link rel="stylesheet" href="css/Contact.css">
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="radio.css">
+
+
  
 </head>
 
-<body>
 
-  <div class="container">
-   
-    <div class="row">
-
-      <div id="contact" class="overlay">
-          
-        <div id="id01" class="w3-modal">
-          <div class="w3-modal-content">
-            <header class="w3-container w3-teal"> 
-              <span onclick="document.getElementById('id01').style.display='none'" 
-                    class="w3-button w3-display-topright" style="left:88%;height: 51px">&times;</span>
-              <h4>Contact Us</h4>		
-            </header>
-            <div class="w3-container">
-              <p><input type="text" name="name" id="name" placeholder="Name / Nickname"></p>            
-              <p><input type="text" name="email" id="email" placeholder="Email Address"></p>            
-              <p><textarea name="message" id="comments" placeholder="Message"></textarea></p>
+            <div class="background">
+         
+                <img src="1.png" class="frame" alt="clock" > 
+                <img src="2.png" class="flower" alt="flower" >  
+                <img src="3.png" class="clock" alt="clock" >
+                <img src="4.png" class="shelf1" alt="shelf1" >
+                <img src="6.png" class="sheet" alt="sheet" >
+                <img src="5.png" class="shelf2" alt="shelf2" >
+                
+                
             </div>
-            <footer class="w3-container w3-teal">
-              <p><input type="submit" name="submit" id="submit" value="Send"></p> 
-            </footer>
-          </div>
-        </div>
-      </div>  
-
-      <div class="player_main">
-
-        <img src="Images/radio1.png" alt="Paris" > 
-
-        <button onclick="document.getElementById('id01').style.display='block'" data-effect="mfp-zoom-in" class="w3-button w3-black">Pray For Us</button>  
-        
-        <span class="vol">VOLUME</span>
-        <div id="player">
-          <i class="fa fa-volume-down"></i>
-          <div id="volume">
-                     </div>
-          <i class="fa fa-volume-up"></i>
-          <audio id="myMedia" src="music.mp3"></audio>
-        </div>
-          
-        <div class="fm_main">
-
-          <p id="text"></p>
-          <p id="text1"></p>
-
-          <div id="displayText" style="display:none;">
-            <div class="fm_main1">
-              <span class="radio_offline" style="display:none;">Radio Station is Offline...</span>
-              <div class="offline_red"></div>
-              <div class="online_green"></div>
-              <span class="now">Now playing:</span>
-              <span class="next">Up next:</span>
-              <script src="https://embed.radio.co/embed/s506afb1b1/song.js"></script>
-              <script src="https://embed.radio.co/embed/s506afb1b1/status.js"></script>
-              <script src="https://embed.radio.co/embed/s506afb1b1/next.js"></script>
-              <script src="https://embed.radio.co/embed/s506afb1b1/artwork.js"></script>
-            </div>
-          </div>
-
-          <div class="fm_glass"></div>
-
-        </div> 
-
-        <div id="shelf">
-          <div class="front"></div>
-        </div>
-
-      </div>
-
-        
-    
-    </div>
-
-  </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery-ui-dist/jquery-ui.min.js" type="text/javascript"></script>
-  <script src="js/volume.js" type="text/javascript"></script>
 
 </body>
-
 </html>
+  
+      
+  
+
