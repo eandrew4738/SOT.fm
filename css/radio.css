@@ -2,7 +2,7 @@ body,
 html 
 {
    
-  background:url(Images/Untitled.png);
+  background:url(Untitled.png);
   padding: 0;
   width: 100%;
   height: 100%;
@@ -18,7 +18,6 @@ html
     position: absolute;
     width: 1349px;
     height: 624px;
-    
 }
 
 .frame
