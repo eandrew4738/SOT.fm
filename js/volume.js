@@ -11,7 +11,8 @@
 	var myMedia = document.createElement('audio');
 	$('#player').append(myMedia);
 	myMedia.id = "myMedia";
-
+	
+	playAudio('http://emilcarlsson.se/assets/Avicii%20-%20The%20Nights.mp3', 0);
 	
 	function playAudio(fileName, myVolume) {
 			myMedia.src = fileName;
