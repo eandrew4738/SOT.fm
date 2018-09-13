@@ -1,0 +1,293 @@
+
+
+body,
+html {
+ 
+  width: 100%;
+  height: 100%;
+  background:url(../Images/Background.JPG);
+  background-size: cover;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+.player_main 
+  {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 870px;
+  height: 559px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  }
+
+
+
+/*Player visual*/
+
+
+
+img {
+  position: relative;
+    width: 870px;
+    height: 559px;
+    border-radius: 40px;
+}
+
+.vol
+{
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    top: 17%;
+    left: 65px;
+    font-weight: 700;
+    color: #f5deb3;
+  }
+
+
+.fm_main 
+  {
+    
+    position: relative;
+    height: 99px;
+    width: 58%;
+    background: black;
+    right: -50%;
+    bottom: 183px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    box-shadow: 0 0 20px #000;
+    
+    overflow: hidden;
+    border-radius: 8px;
+    font-family: 'Quicksand', sans-serif;   
+  }
+
+.fm_main1 
+  {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #f80;
+    border-top-color: #ffc480;
+    border-left-color: #ffac4d;
+    border-right-color: #b35f00;
+    border-bottom-color: #b35f00;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.5),
+                0.4rem 0.4rem 0.1rem 0 rgba(0, 0, 0, 0.25),
+                0 0 0.8rem 0.4rem rgba(255, 136, 0, 0.875), 
+                0 0 6.4rem 0.8rem rgba(255, 136, 0, 0.75);
+  }
+
+.radio_offline 
+  {
+    color: #000000;
+    position: absolute;
+    left: 130px;
+    top: 35%;
+    font-weight: bold;
+    font-size: 20px;
+  }  
+
+.offline_red 
+  {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 75px;
+    width: 12px;
+    height: 12px;
+    z-index: 2;
+    border-radius: 10px;
+    background: #ff0000;
+    background: gradient-gradient(#ffffff, #77a1b9);
+    box-shadow: inset 0 1px 0 rgb(255, 0, 0), 
+                      0 1px 0 rgba(255,255,255,0.1),
+                      0 0 10px rgb(255, 0, 0), 
+                inset 0 0 8px rgb(255, 0, 0), 
+                inset 0 -2px 5px rgba(159, 239, 112, 0.3),
+                inset 0 -3px 8px rgba(255, 0, 0);
+  }
+  
+.online_green
+  {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 75px;
+    width: 12px;
+    height: 12px;
+    border-radius: 10px;
+    z-index: 2;
+    background: #4cfe4c;
+    background: gradient-gradient(#ffffff, #77a1b9);
+    box-shadow: inset 0 1px 0 rgb(86, 255, 61),
+                      0 1px 0 rgba(255,255,255,0.1), 
+                      0 0 10px rgb(70, 230, 0), 
+                inset 0 0 8px rgb(2, 255, 31), 
+                inset 0 -2px 5px rgba(159, 239, 112, 0.3), 
+                inset 0 -3px 8px rgba(30, 233, 0, 0.88);
+  }
+
+.now 
+  {
+    display:none;
+    color: #000000;
+    position: absolute;
+    left: 20%;
+    top: 26%;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+.next 
+  {
+    display:none;
+    color: #000000;
+    position: absolute;
+    left: 121px;
+    top: 52%;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+.radioco_song 
+  {
+    display: block;
+    color: #000000;
+    position: absolute;
+    left: 37%;
+    top: 23%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+.radioco_status 
+  {
+    display: block;
+    color: #000000;
+    position: absolute;
+    left: 86%;
+    top: 72%;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+.radioco_next 
+  {
+    display: block;
+    color: #000000;
+    position: absolute;
+    left: 175px;
+    top: 54px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
+.radioco_artwork>img 
+  {
+    width:80px;
+    height:80px;
+    margin-top: 10px;
+    margin-left: -379px;
+  }
+
+.fm_glass 
+  {
+    position: absolute;
+    width: 101%;
+    height: 108%;
+    left: -2px;
+    top: -5px;
+    display: block;
+    z-index: 2;
+    opacity: 0.2;
+    background: -webkit-linear-gradient(315deg, rgba(255, 255, 255, 1) 3%,
+                                                rgba(255, 255, 255, 1) 32%, 
+                                                rgba(255, 255, 255, 0.19) 57%,
+                                                rgba(255, 255, 255, 0) 63%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 3%,
+                                        rgba(255, 255, 255, 1) 32%,
+                                        rgba(255, 255, 255, 0.19) 57%, 
+                                        rgba(255, 255, 255, 0) 63%);
+  }
+
+  #shelf 
+  {
+    width: 100%;
+    height: 71px;
+    margin: 100px auto 0;
+    position: absolute;
+    z-index: -10;
+    bottom: -6%;
+  }
+
+.front 
+  {
+    width: 110%;
+    height: 40px;
+    background: url(../Images/shelf.jpg);
+    position: absolute;
+    bottom: 1px;
+    left: -40px;
+    box-shadow: -9px -8px 15px 3px #0b0b0b;
+    background-size: cover;
+  }
+
+  
+
+  .w3-container input
+{
+  padding: 5px 15px;
+    border: 1px solid #666;
+    width: 100%;
+}
+
+.w3-container textarea
+
+{
+  padding: 5px 15px;
+  border: 1px solid #666;
+  width: 100%;
+}
+
+.w3-container h4
+{
+  margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+}
+}
+
+{
+  padding: 5px 15px;
+  border: 1px solid #666;
+  width: 100%;
+}
+ 
+#submit {
+  color: #fff;
+  background: #a79b92;
+  padding: 5px 20px;
+  width: 19%;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 87%;
+  right: 43%;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+
+
