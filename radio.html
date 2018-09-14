@@ -6,7 +6,11 @@
   <meta name="description" content="SOT.FM Radio">
   <meta name="author" content="">
   <link rel="icon" href="Images/audio_radio_icon_0.ico">
-  <link rel="stylesheet" href="radio.css">
+  <link rel="stylesheet" href="css/radio.css">
+  <link rel="stylesheet" href="css/volume.css">
+  <link rel="stylesheet" href="css/display.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
  
@@ -21,12 +25,43 @@
                 <img src="Images/4.png" class="shelf1" alt="shelf1" >
                 <img src="Images/6.png" class="sheet" alt="sheet" >
                 <img src="Images/5.png" class="shelf2" alt="shelf2">
+
                 <div class="player">
-         
-                <img src="Images/radio.png" class="radio" alt="radio" >
-                
-                
-            </div>
+                    <img src="Images/radio.png" class="radio" alt="radio" >
+                    <span class="vol">VOLUME</span>
+                    <div id="player">
+                        <i class="fa fa-volume-down"></i>
+                        <div id="volume"></div>
+                        <i class="fa fa-volume-up"></i>
+                    </div>
+                    <div class="fm_main">
+
+                        <p id="text"></p>
+                        <p id="text1"></p>
+              
+                        <div id="displayText" style="display:none;">
+                          <div class="fm_main1">
+                            <span class="radio_offline" style="display:none;">Radio Station is Offline...</span>
+                            <div class="offline_red"></div>
+                            <div class="online_green"></div>
+                            <span class="now">Now playing:</span>
+                            <span class="next">Up next:</span>
+                            <script src="https://embed.radio.co/embed/s506afb1b1/song.js"></script>
+                            <script src="https://embed.radio.co/embed/s506afb1b1/status.js"></script>
+                            <script src="https://embed.radio.co/embed/s506afb1b1/next.js"></script>
+                            <script src="https://embed.radio.co/embed/s506afb1b1/artwork.js"></script>
+                          </div>
+                        </div>
+              
+                        <div class="fm_glass"></div>
+              
+                    </div> 
+
+                </div>
+    
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+                <script src="js/jquery-ui-dist/jquery-ui.min.js" type="text/javascript"></script>
+                <script src="js/volume.js" type="text/javascript"></script>            
 
 </body>
 </html>

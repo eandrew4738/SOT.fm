@@ -2,7 +2,7 @@ body,
 html 
 {
    
-  background:url(Untitled.png);
+  background:url(../Images/Untitled.png);
   padding: 0;
   width: 100%;
   height: 100%;
@@ -11,13 +11,12 @@ html
  
 }
  
-
-
 .background 
  {
     position: absolute;
     width: 1349px;
     height: 624px;
+    
 }
 
 .frame
@@ -81,6 +80,33 @@ html
     
 }
 
+.player
+ {
+    position: absolute;
+    width: 749px;
+    height: 415px;
+    right: 448px;
+    bottom: 4px;
+    
+}
+
+.radio
+ {
+    position: absolute;
+    width: 751px;
+    height: 408px;
+    
+}
+
+.vol {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 10px;
+    top: 17%;
+    left: 64px;
+    font-weight: 700;
+    color: #f5deb3;
+}
 
 
 
