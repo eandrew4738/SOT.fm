@@ -82,6 +82,25 @@ html
     
 }
 
+.player
+ {
+    position: absolute;
+    width: 749px;
+    height: 415px;
+    right: 448px;
+    bottom: 4px;
+    
+}
+
+.radio
+ {
+    position: absolute;
+    width: 751px;
+    height: 408px;
+    
+}
+
+
 
 
 
